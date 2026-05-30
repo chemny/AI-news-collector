@@ -1,4 +1,4 @@
-# Media Source Collector
+# AI News Collector
 
 Local-first media source collection skill for AI news, creator workflows, daily briefings, deduplication, and topic candidate generation.
 
@@ -6,7 +6,7 @@ Designed to be portable across Codex, Claude Code, and OpenClaw. The repository 
 
 ## What It Does
 
-Media Source Collector turns public feeds, external curated signals, and X builder timelines into a local SQLite source pool.
+AI News Collector turns public feeds, external curated signals, and X builder timelines into a local SQLite source pool.
 
 It supports:
 
@@ -43,8 +43,8 @@ Clone or copy this repository into your agent skills directory.
 Common locations:
 
 ```text
-~/.agents/skills/media-source-collector
-~/.codex/skills/media-source-collector
+~/.agents/skills/AI-news-collector
+~/.codex/skills/AI-news-collector
 ```
 
 Install the optional Python dependency:

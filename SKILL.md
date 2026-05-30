@@ -1,9 +1,9 @@
 ---
-name: media-source-collector
+name: AI-news-collector
 description: Daily media information collection skill for self-media workflows. Use this whenever the user wants to collect the past 24 hours of AI/media/news/materials, build a daily briefing source pool, run source collection, normalize third-party skill outputs, store collected items in SQLite, deduplicate same-day and recent-day news, or prepare source cards for topic selection. This skill should trigger for "信息采集", "日报采集", "抓取今天资讯", "过去24小时", "source cards", "采集素材", "更新素材库", "去重新闻", and similar requests.
 ---
 
-# Media Source Collector
+# AI News Collector
 
 Collect daily source material for self-media creation. The skill bundles the integration logic needed to read public services, feeds, and APIs inspired by `follow-builders`, `aihot`, and `news-aggregator-skill`, then normalizes their output into SQLite-backed source cards.
 

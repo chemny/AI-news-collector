@@ -1,4 +1,4 @@
-# Media Source Collector
+# AI News Collector
 
 面向自媒体创作的信息采集 Skill，支持 AI 资讯采集、原始数据落库、去重、日报生成和选题池生成。
 
@@ -6,7 +6,7 @@
 
 ## 能做什么
 
-Media Source Collector 会把公开 RSS/API、外部精选信号和 X builder 时间线采集到本地 SQLite。
+AI News Collector 会把公开 RSS/API、外部精选信号和 X builder 时间线采集到本地 SQLite。
 
 核心能力：
 
@@ -41,8 +41,8 @@ SQLite 数据库按流水线拆分：
 把仓库 clone 或复制到你的 agent skills 目录：
 
 ```text
-~/.agents/skills/media-source-collector
-~/.codex/skills/media-source-collector
+~/.agents/skills/AI-news-collector
+~/.codex/skills/AI-news-collector
 ```
 
 安装可选 Python 依赖：
