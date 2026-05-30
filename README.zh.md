@@ -1,5 +1,7 @@
 # AI News Collector
 
+[English](README.md) | 中文
+
 面向自媒体创作的信息采集 Skill，支持 AI 资讯采集、原始数据落库、去重、日报生成和选题池生成。
 
 本仓库按跨平台 Skill 结构整理：仓库根目录就是 Skill 根目录，`SKILL.md` 位于根目录。设计目标是兼容 Codex、Claude Code 和 OpenClaw。

@@ -1,5 +1,7 @@
 # AI News Collector
 
+English | [中文](README.zh.md)
+
 Local-first media source collection skill for AI news, creator workflows, daily briefings, deduplication, and topic candidate generation.
 
 Designed to be portable across Codex, Claude Code, and OpenClaw. The repository root is the skill root; `SKILL.md` lives at the top level.
