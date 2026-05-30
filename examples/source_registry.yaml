@@ -1,0 +1,50 @@
+version: 1
+
+policy:
+  default_enabled: true
+  default_priority: 1.0
+  default_reliability: 0.7
+
+sources:
+  - id: openai-blog
+    name: OpenAI Blog
+    type: official_blog
+    platform: web
+    urls:
+      - https://openai.com/news/
+    rss: https://openai.com/news/rss.xml
+    priority: 1.4
+    reliability: 0.95
+    enabled: true
+    migration_status: owned
+    tags:
+      - OpenAI
+      - model
+      - product
+
+  - id: anthropic-news
+    name: Anthropic News
+    type: official_blog
+    platform: web
+    urls:
+      - https://www.anthropic.com/news
+    rss: https://www.anthropic.com/news/rss.xml
+    priority: 1.4
+    reliability: 0.95
+    enabled: true
+    migration_status: verify
+    tags:
+      - Anthropic
+      - Claude
+      - Agent
+
+external_curated_sources:
+  - id: aihot
+    name: AIHOT
+    type: external_api
+    platform: other
+    enabled: true
+    migration_status: external_only
+    tags:
+      - curated
+      - ai-news

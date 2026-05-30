@@ -1,0 +1,63 @@
+project:
+  name: media-workflow
+  data_dir: ./data
+  database_path: ./data/media_sources.sqlite
+  timezone: Asia/Shanghai
+
+collection:
+  default_window_hours: 24
+  dedupe_recent_days: 2
+  write_raw_files: true
+  raw_dir: ./data/raw
+  report_dir: ./data/reports
+
+localization:
+  working_language: zh
+  auto_localize_english: false
+  max_summary_zh_chars: 200
+
+sources:
+  aihot_selected:
+    enabled: true
+    adapter: aihot
+    schedule: workflow_triggered
+    mode: selected
+    category: null
+    take: 50
+
+  aihot_daily:
+    enabled: false
+    adapter: aihot
+    schedule: workflow_triggered
+    mode: daily
+
+  x_builders:
+    enabled: false
+    adapter: x_builder_monitor
+    schedule: workflow_triggered
+    profiles_path: ./examples/builder_source_profiles.yaml
+    nitter_instances:
+      - https://nitter.net
+    max_items_per_builder: 5
+    include_reposts: true
+    request_interval_seconds: 0.2
+
+  news_aggregator:
+    enabled: true
+    adapter: news_aggregator
+    schedule: workflow_triggered
+    sources:
+      - source_registry
+      - hackernews
+      - ai_newsletters
+      - arxiv
+    limit: 15
+    registry_path: ./examples/source_registry.yaml
+    registry_statuses:
+      - owned
+      - verify
+    registry_per_source_limit: 5
+    registry_total_limit: 20
+    registry_request_interval_seconds: 0.1
+    registry_keyword: AI,artificial intelligence,LLM,agent,OpenAI,Claude,GPT,Gemini,Anthropic,MCP,model
+    deep: false

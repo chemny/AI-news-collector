@@ -1,0 +1,17 @@
+version: 1
+
+companies:
+  - id: openai
+    name: OpenAI
+    priority: 1.4
+    official_sources:
+      - https://openai.com/news/
+
+builders:
+  - id: openai
+    name: OpenAI
+    handle: OpenAI
+    company_id: openai
+    role: official
+    priority: 1.4
+    enabled: true
